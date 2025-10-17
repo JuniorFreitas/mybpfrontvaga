@@ -1,0 +1,23 @@
+{
+  "urlApi": "https://sistema.mybp.com.br/api/",
+  "dev": false,
+  "tinyPadrao": {
+    "toolbar": ["bold italic underline"],
+    "menubar": false,
+    "statusbar": true,
+    "schema": "html5",
+    "height": 200,
+    "width": "100%",
+    "resize": true,
+    "language": "pt_BR",
+    "language_url": "https://cdn.tiny.cloud/1/no-api-key/tinymce/5/langs/pt_BR.js",
+    "branding": false,
+    "plugins": "paste",
+    "paste_auto_cleanup_on_paste": true,
+    "paste_remove_styles": true,
+    "paste_remove_styles_if_webkit": true,
+    "paste_strip_class_attributes": true,
+    "content_style": "body { font-size: 12pt; font-family: Montserrat; }",
+    "key": "933r86z56qasvl5azqst4vo2qa2y2mehqwsxxaz2ttz8n0td"
+  }
+}

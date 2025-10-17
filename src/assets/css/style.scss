@@ -1,0 +1,185 @@
+@import "~@fortawesome/fontawesome-free/css/all.css";
+@import "~bootstrap/dist/css/bootstrap.css";
+@import "~toastr/toastr";
+@import "~daterangepicker/daterangepicker";
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600&display=swap");
+:root {
+  /* Colors: */
+  --color-primary: #154c60;
+  --color-primary-active-hover: #033547;
+  --color-secondary: #333333;
+  --color-secondary-active-hover: #686868;
+  --color-white: #ffffff;
+
+  /* Font/text values */
+  --montserrat: Montserrat;
+  --font-style-normal: normal;
+  --font-weight-normal: normal;
+  --font-weight-bold: bold;
+  --font-size-12: 12px;
+  --font-size-13: 13px;
+  --font-size-16: 16px;
+  --font-size-20: 20px;
+  --font-size-25: 25px;
+  --character-spacing-0: 0px;
+  --line-spacing-14: 14px;
+  --line-spacing-16: 16px;
+  --line-spacing-19: 19px;
+  --line-spacing-23: 23px;
+  --line-spacing-24: 24px;
+  --line-spacing-30: 30px;
+}
+
+#app {
+  font-family: var(--montserrat);
+  font-style: var(--font-style-normal);
+  font-weight: var(--font-weight-normal);
+  font-size: var(--font-size-13);
+  line-height: var(--line-spacing-30);
+  letter-spacing: var(--character-spacing-0);
+  color: var(--color-343a40);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+a {
+  text-decoration: none;
+  color: var(--color-primary);
+  transition: all 0.3s;
+}
+a:hover {
+  text-decoration: none;
+  color: var(--color-primary-active-hover);
+  transition: all 0.3s;
+}
+
+.btn-primary {
+  background-color: var(--color-primary);
+  border-color: var(--color-primary);
+  color: var(--color-white);
+  &:disabled,
+  .disabled {
+    background-color: var(--color-primary);
+    border-color: var(--color-primary-active-hover);
+    color: var(--color-white);
+    cursor: not-allowed;
+  }
+  &:hover {
+    background-color: var(--color-primary-active-hover);
+    border-color: var(--color-primary-active-hover);
+    color: var(--color-white);
+  }
+  &:focus {
+    background-color: var(--color-primary-active-hover);
+    border-color: var(--color-primary-active-hover);
+    color: var(--color-white);
+    box-shadow: 0 0 0 0.1rem var(--color-primary);
+  }
+}
+.table-responsive {
+  overflow-x: scroll;
+}
+.dropdown-item {
+  margin: 0;
+}
+.dropstart .dropdown-toggle::before {
+  display: inline-block;
+  // margin-right: 0.255em;
+  vertical-align: 0.255em;
+  content: "";
+  border-top: 0.3em solid transparent;
+  border-right: none;
+  border-bottom: none;
+}
+//fieldset e legend
+fieldset {
+  border: 1px solid #d5d5d5 !important;
+  padding: 0.3rem 1rem 1.7rem 1rem;
+  border-radius: 0.45rem;
+  background-color: #f6f6f6;
+  text-align: left;
+}
+
+legend {
+  font-size: 0.76rem;
+  margin-bottom: 0px;
+  width: auto;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  float: none;
+  text-align: left;
+  padding: 2px 1em 2px 1em;
+  background-color: var(--color-primary);
+  color: white;
+  text-transform: uppercase;
+}
+
+.form-group {
+  text-align: left;
+}
+
+.linkComum {
+  color: var(--color-primary);
+  text-decoration: none;
+  transition: all 0.3s;
+}
+.form-control {
+  border-radius: 15px;
+  padding: 0px 10px 0px 10px;
+}
+.btn {
+  margin-top: 5px;
+  margin-bottom: 5px;
+  border-radius: 20px !important;
+}
+.text-left {
+  text-align: left;
+}
+.text-center {
+  text-align: center;
+}
+.text-right {
+  text-align: right;
+}
+.space-bt-ml {
+  margin-left: 0.5rem;
+}
+.radius0 {
+  border-radius: 0px;
+}
+.cursor-pointer {
+  cursor: pointer;
+}
+.fade-enter-active,
+.fade-leave-active {
+  transition: opacity 0.3s;
+}
+.fade-enter, .fade-leave-to /* .fade-leave-active below version 2.1.8 */ {
+  opacity: 0;
+}
+.form-switch .form-check-input {
+  width: 40px;
+  margin-right: 5px;
+  label {
+    font-size: 20px;
+  }
+}
+.form-check-input {
+  height: 20px;
+  width: 80px;
+  &:focus {
+    box-shadow: none;
+  }
+  &:checked {
+    background-color: var(--color-primary-active-hover);
+    border-color: var(--color-primary-active-hover);
+  }
+}
+
+.btn {
+  padding: 5px 20px 5px 20px;
+}
+
+.bold {
+  font-weight: bold;
+}
